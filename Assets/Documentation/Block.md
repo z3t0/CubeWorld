@@ -3,7 +3,8 @@
 ## API
 
 ### Variables
-- tileSize
+- tileSize:
+
  Refers to the number of rows/columns of the tilesheet. The value is 
  calculated by dividing 1 by the number of rows/columns in the tile 
  tilesheets are supported.
@@ -19,13 +20,15 @@ const float tileSize = (float) 1 / 6
  refers to each texture, so a total of 36 different faces can fit
  on a tilesheet measuring 6 * 6.
 
--  Tile
+-  Tile:
+
  Struct for x and y postion
 
  TODO: Replace with Vector2
 
 ### Methods
--  TexturePostion
+-  TexturePostion:
+
  (Direction direction)
  Virtual function that allows each Block to provide its own texture
  coordinates. With the direction provided, each Block is further 
