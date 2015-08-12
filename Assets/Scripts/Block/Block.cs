@@ -12,6 +12,17 @@ public class Block
 		public int y;
 	}
 
+
+	public enum Direction
+	{
+		North,
+		East,
+		South,
+		West,
+		Up,
+		Down
+	};
+
 	public virtual Tile TexturePosition(Direction direction)
 	{
 		Tile tile = new Tile();
@@ -48,32 +59,32 @@ public class Block
 	{ 
 		meshData.useRenderDataForCol = true;    
 
-		if (!chunk.GetBlock(x, y + 1, z).IsSolid(Direction.down))
+		if (!chunk.GetBlock(x, y + 1, z).IsSolid(Direction.Down))
 		{
 			meshData = FaceDataUp(chunk, x, y, z, meshData);
 		}
 
-		if (!chunk.GetBlock(x, y - 1, z).IsSolid(Direction.up))
+		if (!chunk.GetBlock(x, y - 1, z).IsSolid(Direction.Up))
 		{
 			meshData = FaceDataDown(chunk, x, y, z, meshData);
 		}
 
-		if (!chunk.GetBlock(x, y, z + 1).IsSolid(Direction.south))
+		if (!chunk.GetBlock(x, y, z + 1).IsSolid(Direction.South))
 		{
 			meshData = FaceDataNorth(chunk, x, y, z, meshData);
 		}
 
-		if (!chunk.GetBlock(x, y, z - 1).IsSolid(Direction.north))
+		if (!chunk.GetBlock(x, y, z - 1).IsSolid(Direction.North))
 		{
 			meshData = FaceDataSouth(chunk, x, y, z, meshData);
 		}
 
-		if (!chunk.GetBlock(x + 1, y, z).IsSolid(Direction.west))
+		if (!chunk.GetBlock(x + 1, y, z).IsSolid(Direction.West))
 		{
 			meshData = FaceDataEast(chunk, x, y, z, meshData);
 		}
 
-		if (!chunk.GetBlock(x - 1, y, z).IsSolid(Direction.east))
+		if (!chunk.GetBlock(x - 1, y, z).IsSolid(Direction.East))
 		{
 			meshData = FaceDataWest(chunk, x, y, z, meshData);
 		}
@@ -92,7 +103,7 @@ public class Block
 
 			meshData.AddQuadTriangles();
 
-			meshData.uv.AddRange(FaceUVs(Direction.up));
+			meshData.uv.AddRange(FaceUVs(Direction.Up));
 
 			return meshData;
 		}
@@ -107,7 +118,7 @@ public class Block
 
 			meshData.AddQuadTriangles();
 
-			meshData.uv.AddRange(FaceUVs(Direction.down));
+			meshData.uv.AddRange(FaceUVs(Direction.Down));
 
 			return meshData;
 		}
@@ -122,7 +133,7 @@ public class Block
 
 			meshData.AddQuadTriangles();
 
-			meshData.uv.AddRange(FaceUVs(Direction.north));
+			meshData.uv.AddRange(FaceUVs(Direction.North));
 
 			return meshData;
 		}
@@ -137,7 +148,7 @@ public class Block
 
 			meshData.AddQuadTriangles();
 
-			meshData.uv.AddRange(FaceUVs(Direction.east));
+			meshData.uv.AddRange(FaceUVs(Direction.East));
 
 			return meshData;
 		}
@@ -152,7 +163,7 @@ public class Block
 
 			meshData.AddQuadTriangles();
 
-			meshData.uv.AddRange(FaceUVs(Direction.south));
+			meshData.uv.AddRange(FaceUVs(Direction.South));
 
 			return meshData;
 		}
@@ -167,38 +178,27 @@ public class Block
 
 			meshData.AddQuadTriangles();
 
-			meshData.uv.AddRange(FaceUVs(Direction.west));
+			meshData.uv.AddRange(FaceUVs(Direction.West));
 
 			return meshData;
 		}
 
 
-	public enum Direction
-	{
-		north,
-		east,
-		south,
-		west,
-		up,
-		down}
-
-	;
-
 	public virtual bool IsSolid(Direction direction)
 	{
 		switch (direction)
 		{
-			case Direction.north:
+			case Direction.North:
 				return true;
-			case Direction.east:
+			case Direction.East:
 				return true;
-			case Direction.south:
+			case Direction.South:
 				return true;
-			case Direction.west:
+			case Direction.West:
 				return true;
-			case Direction.up:
+			case Direction.Up:
 				return true;
-			case Direction.down:
+			case Direction.Down:
 				return true;
 		}
 
