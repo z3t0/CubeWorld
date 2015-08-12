@@ -1,0 +1,76 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AddQuadTriangles	MeshData.cs	/^	public void AddQuadTriangles() {$/;"	m	class:MeshData
+AddTriangle	MeshData.cs	/^	public void AddTriangle(int tri)$/;"	m	class:MeshData
+AddVertex	MeshData.cs	/^	public void AddVertex(Vector3 vertex)$/;"	m	class:MeshData
+Block	Block/Block.cs	/^    public Block()$/;"	m	class:Block
+Block	Block/Block.cs	/^public class Block$/;"	c
+BlockAir	Block/BlockAir.cs	/^	public BlockAir()$/;"	m	class:BlockAir
+BlockAir	Block/BlockAir.cs	/^public class BlockAir : Block {$/;"	c
+BlockGrass	Block/BlockGrass.cs	/^	public BlockGrass ()$/;"	m	class:BlockGrass
+BlockGrass	Block/BlockGrass.cs	/^public class BlockGrass : Block {$/;"	c
+BlockStone	Block/BlockStone.cs	/^	public BlockStone()$/;"	m	class:BlockStone
+BlockStone	Block/BlockStone.cs	/^public class BlockStone : Block {$/;"	c
+Blockdata	Block/Block.cs	/^    public virtual MeshData Blockdata(Chunk chunk, int x, int y, int z, MeshData meshData)$/;"	m	class:Block
+Blockdata	Block/BlockAir.cs	/^	public override MeshData Blockdata(Chunk chunk, int x, int y, int z, MeshData meshData)$/;"	m	class:BlockAir
+Chunk	Chunk.cs	/^public class Chunk : MonoBehaviour {$/;"	c
+CreateChunk	World.cs	/^	public void CreateChunk(int x, int y, int z)$/;"	m	class:World
+Direction	Block/Block.cs	/^    public enum Direction$/;"	g	class:Block
+Equals	WorldPos.cs	/^public override bool Equals(object obj)$/;"	m	struct:WorldPos
+FaceDataDown	Block/Block.cs	/^    protected virtual MeshData FaceDataDown$/;"	m	class:Block
+FaceDataEast	Block/Block.cs	/^    protected virtual MeshData FaceDataEast$/;"	m	class:Block
+FaceDataNorth	Block/Block.cs	/^    protected virtual MeshData FaceDataNorth$/;"	m	class:Block
+FaceDataSouth	Block/Block.cs	/^    protected virtual MeshData FaceDataSouth$/;"	m	class:Block
+FaceDataUp	Block/Block.cs	/^    protected virtual MeshData FaceDataUp$/;"	m	class:Block
+FaceDataWest	Block/Block.cs	/^    protected virtual MeshData FaceDataWest$/;"	m	class:Block
+FaceUVs	Block/Block.cs	/^    public virtual Vector2[] FaceUVs(Direction direction)$/;"	m	class:Block
+GetBlock	Chunk.cs	/^    public Block GetBlock(int x, int y, int z) {$/;"	m	class:Chunk
+GetBlock	World.cs	/^	public Block GetBlock(int x, int y, int z)$/;"	m	class:World
+GetChunk	World.cs	/^	public Chunk GetChunk(int x, int y, int z)$/;"	m	class:World
+IsSolid	Block/Block.cs	/^    public virtual bool IsSolid(Direction direction)$/;"	m	class:Block
+IsSolid	Block/BlockAir.cs	/^	public override bool IsSolid(Direction direction)$/;"	m	class:BlockAir
+MeshData	MeshData.cs	/^	public MeshData() {$/;"	m	class:MeshData
+MeshData	MeshData.cs	/^public class MeshData {$/;"	c
+RenderMesh	Chunk.cs	/^    void RenderMesh(MeshData meshData){$/;"	m	class:Chunk	file:
+Start	Chunk.cs	/^    void Start() {$/;"	m	class:Chunk	file:
+Start	World.cs	/^	void Start () {$/;"	m	class:World	file:
+TexturePosition	Block/Block.cs	/^    public virtual Tile TexturePosition(Direction direction)$/;"	m	class:Block
+TexturePosition	Block/BlockGrass.cs	/^public override Tile TexturePosition(Direction direction)$/;"	m	class:BlockGrass
+TexturePosition	Block/BlockStone.cs	/^public override Tile TexturePosition(Direction direction)$/;"	m	class:BlockStone
+Tile	Block/Block.cs	/^    public struct Tile$/;"	s	class:Block
+Update	World.cs	/^	void Update () {$/;"	m	class:World	file:
+UpdateChunk	Chunk.cs	/^    void UpdateChunk() {$/;"	m	class:Chunk	file:
+World	World.cs	/^public class World : MonoBehaviour {$/;"	c
+WorldPos	WorldPos.cs	/^	public WorldPos(int x, int y, int z) $/;"	m	struct:WorldPos
+WorldPos	WorldPos.cs	/^public struct WorldPos$/;"	s
+blocks	Chunk.cs	/^    private Block[ , , ] blocks = new Block[chunkSize, chunkSize, chunkSize];    \/\/ 3 Dimensional Array of Blocks$/;"	f	class:Chunk	file:
+chunkPrefab	World.cs	/^	public GameObject chunkPrefab;$/;"	f	class:World
+chunkSize	Chunk.cs	/^    public static int chunkSize = 16;$/;"	f	class:Chunk
+chunks	World.cs	/^	public Dictionary<WorldPos, Chunk> chunks = new Dictionary<WorldPos, Chunk>();$/;"	f	class:World
+colTriangles	MeshData.cs	/^	public List<int> colTriangles = new List<int>();$/;"	f	class:MeshData
+colVertices	MeshData.cs	/^	public List<Vector3> colVertices = new List<Vector3>();$/;"	f	class:MeshData
+collider	Chunk.cs	/^    MeshCollider collider;$/;"	f	class:Chunk	file:
+down	Block/Block.cs	/^        down}$/;"	e	enum:Block.Direction	file:
+east	Block/Block.cs	/^        east,$/;"	e	enum:Block.Direction	file:
+filter	Chunk.cs	/^    MeshFilter filter;$/;"	f	class:Chunk	file:
+north	Block/Block.cs	/^        north,$/;"	e	enum:Block.Direction	file:
+pos	Chunk.cs	/^    public WorldPos pos;$/;"	f	class:Chunk
+south	Block/Block.cs	/^        south,$/;"	e	enum:Block.Direction	file:
+tileSize	Block/Block.cs	/^    const float tileSize = (float)1 \/ 4;$/;"	f	class:Block	file:
+triangles	MeshData.cs	/^	public List<int> triangles = new List<int>();$/;"	f	class:MeshData
+up	Block/Block.cs	/^        up,$/;"	e	enum:Block.Direction	file:
+update	Chunk.cs	/^    public bool update = true;$/;"	f	class:Chunk
+useRenderDataForCol	MeshData.cs	/^	public bool useRenderDataForCol;	\/\/ use the same mesh for the collider$/;"	f	class:MeshData
+uv	MeshData.cs	/^	public List<Vector2> uv = new List<Vector2>();$/;"	f	class:MeshData
+vertices	MeshData.cs	/^	public List<Vector3> vertices = new List<Vector3>();$/;"	f	class:MeshData
+west	Block/Block.cs	/^        west,$/;"	e	enum:Block.Direction	file:
+world	Chunk.cs	/^    public World world;$/;"	f	class:Chunk
+x	Block/Block.cs	/^        public int x;$/;"	f	struct:Block.Tile
+x	WorldPos.cs	/^	public int x, y, z;$/;"	f	struct:WorldPos
+y	Block/Block.cs	/^        public int y;$/;"	f	struct:Block.Tile
+y	WorldPos.cs	/^	public int x, y, z;$/;"	f	struct:WorldPos
+z	WorldPos.cs	/^	public int x, y, z;$/;"	f	struct:WorldPos
