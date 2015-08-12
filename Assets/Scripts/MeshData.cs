@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -14,14 +14,14 @@ public class MeshData {
 	public bool useRenderDataForCol;	// use the same mesh for the collider
 
 	public MeshData() {
-				
+
 	}
 
 	public void AddQuadTriangles() {
 		triangles.Add(vertices.Count - 4);
 		triangles.Add(vertices.Count - 3);
 		triangles.Add(vertices.Count - 2);
-		
+
 		triangles.Add(vertices.Count - 4);
 		triangles.Add(vertices.Count - 2);
 		triangles.Add(vertices.Count - 1);
@@ -56,6 +56,5 @@ public class MeshData {
 			colTriangles.Add(tri - (vertices.Count - colVertices.Count));
 		}
 	}
-
 
 }
