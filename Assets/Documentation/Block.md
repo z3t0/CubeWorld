@@ -11,9 +11,9 @@
 						texturing
 
 						Example:
-						```c#
-						const float tileSize = (float) 1 / 6
-						```
+```c#
+const float tileSize = (float) 1 / 6
+```
 						For a square tilesheet which measures 6 faces by 6 faces. Faces
 						refers to each texture, so a total of 36 different faces can fit
 						on a tilesheet measuring 6 * 6.
@@ -78,4 +78,5 @@
 						texture accordingly. The Top and Bottom have unique textures, while
 						all the sides have the same texture. This example is of a Grass 
 						Block.
+
 	}
